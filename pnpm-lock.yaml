@@ -5,11 +5,18 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@tisou1/find':
+    specifier: ^1.0.2
+    version: 1.0.2
   find-up:
     specifier: ^6.3.0
     version: 6.3.0
 
 packages:
+
+  /@tisou1/find@1.0.2:
+    resolution: {integrity: sha512-UU0QQb8/JUmegLUDnhYtnG7HY+4p0OIa09MSxgGv4K1eJv5FO5ymqWfwwVjCt/zeps1gqCD52rylnO/7wgNkjw==}
+    dev: true
 
   /find-up@6.3.0:
     resolution: {integrity: sha512-v2ZsoEuVHYy8ZIlYqwPe/39Cy+cFDzp4dXPaxNvkEuouymu+2Jbz0PxpKarJHYJTmv2HWT3O382qY8l4jMWthw==}

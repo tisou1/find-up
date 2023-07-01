@@ -1,18 +1,22 @@
 {
   "name": "@tisou1/find",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
-  "main": "index.js",
+  "main": "index.mjs",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node index.js"
+    "dev": "node index.js",
+    "pub": "npm publish --access=public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@tisou1/find": "^1.0.2",
     "find-up": "^6.3.0"
   },
-  "files": ["index.js"]
+  "files": [
+    "index.mjs"
+  ]
 }
