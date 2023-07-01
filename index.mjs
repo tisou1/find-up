@@ -1,11 +1,6 @@
 import path, { resolve, basename, dirname, parse } from 'node:path'
 import fs from 'node:fs'
 
-// console.log(await findUp(['unicorn.png', 'index.md']));
-
-// console.log(process.cwd())
-// console.log(path.dirname('/home/cd/1.js'))
-
 function findUP(path, options = {}) {
   let paths = [path].flat() // 统一成数组
 
@@ -41,20 +36,17 @@ function localePath(paths, cwd) {
 
 function findFile(filepath) {
   // 检测目录文件
-  console.log('当前检测目录文件:', filepath)
   // 判断文件存不存在
   try {
     // 第二个参数, 制定访问模式
     fs.accessSync(filepath)
-    console.log('can read/write')
     return true
   } catch (err) {
-    console.error('no access!')
+    return false
   }
-  return false
 }
 
-console.log(findUP(['ccc.txt', 'index.md', 'package.json']))
+export default findUP
 
 /**
  * 判断文件存不存在
